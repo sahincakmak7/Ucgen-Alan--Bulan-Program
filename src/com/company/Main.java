@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	    int a,b,c;
+	    int a,b,c,u;
         double area;
         int perimeter;
 
@@ -19,10 +19,11 @@ public class Main {
         c = input.nextInt();
 
 
-        perimeter = ((a+b+c));
+        perimeter = (a+b+c);
+        u = (perimeter/2);
         System.out.println("Üçgenin çevresi : " + perimeter);
 
-        area =  Math.sqrt(perimeter *(perimeter-a)*(perimeter-b)*(perimeter-c));
+        area =  Math.sqrt(u *((u-a)*(u-b)*(u-c)));
         System.out.println("Üçgenin alanı :"+area);
 
 
